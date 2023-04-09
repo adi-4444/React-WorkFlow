@@ -4,31 +4,32 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-	const [flowList, setFlowList] = useState();
+	const [workFlowList, setWorkFlowList] = useState();
 	const fetchList = () => {
 		axios("https://64307b10d4518cfb0e50e555.mockapi.io/workflow").then(
-			(data) => setFlowList(data.data)
+			(data) =>
+				setWorkFlowList(data.data).catch((error) => console.log(error))
 		);
 	};
 	useEffect(() => {
 		fetchList();
 	}, []);
-	console.log(flowList);
+
 	return (
 		<div className='Home'>
-			<h1>Home</h1>
+			<h1>Work Flows List</h1>
 			<div className='list-table'>
 				<table>
 					<thead>
 						<tr>
-							<th>id</th>
-							<th>name</th>
-							<th>input_type</th>
-							<th>createdAt</th>
+							<th>Id</th>
+							<th>Name</th>
+							<th>Input Type</th>
+							<th>Created At</th>
 						</tr>
 					</thead>
 					<tbody>
-						{flowList?.map((item) => (
+						{workFlowList?.map((item) => (
 							<tr
 								key={item.name}
 								onClick={() => redirect(item.id)}

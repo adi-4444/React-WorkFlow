@@ -1,16 +1,21 @@
+.workflow-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 98vh;
+}
 .worklflow {
-	width: 80%;
-	height: 80vh;
-	background: #8c8b8b;
+	width: 90%;
+	height: 100%;
+	background: #e7e5e5;
+	padding: 8px;
+}
+.main-heading {
+	border: 1px solid rgb(180, 180, 242);
+	padding: 1rem;
+	background-color: #ffffff;
 }
 .flow-content {
 	display: flex;
-}
-.modules {
-	flex: 1;
-	background: #e2e0e0;
-}
-.canvas-flow {
-	flex: 2;
-	background: #e7d0d0;
+	height: 91%;
 }
