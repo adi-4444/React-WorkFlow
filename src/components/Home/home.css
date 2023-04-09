@@ -1,0 +1,21 @@
+table {
+	width: 70%;
+}
+th {
+	background-color: #80bbf2;
+}
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(even) {
+	background-color: #b6c9e3;
+}
+.Home {
+	width: 100%;
+}
+.list-table {
+	padding: 0 5rem;
+}

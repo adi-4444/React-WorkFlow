@@ -1,0 +1,16 @@
+.worklflow {
+	width: 80%;
+	height: 80vh;
+	background: #8c8b8b;
+}
+.flow-content {
+	display: flex;
+}
+.modules {
+	flex: 1;
+	background: #e2e0e0;
+}
+.canvas-flow {
+	flex: 2;
+	background: #e7d0d0;
+}
