@@ -12,17 +12,20 @@ import ReactFlow, {
 
 const Canvas = ({ flowDetails }) => {
 	const reactFlowRef = useRef(null);
-	const [nodes, setNodes, onNodesChange] = useNodesState([
-		{
-			id: "1",
-			type: "input",
-			data: {
-				label: "Input",
-				inputType: flowDetails?.input_type,
+	const [nodes, setNodes, onNodesChange] = useNodesState(
+		[
+			{
+				id: "0",
+				type: "input",
+				data: {
+					label: "Input",
+					inputType: flowDetails?.input_type,
+				},
+				position: { x: 0, y: 0 },
+				valid: true,
 			},
-			position: { x: 0, y: 0 },
-		},
-	]);
+		].map((node) => ({ ...node, valid: node.valid ?? false }))
+	);
 
 	const [edges, setEdges, onEdgesChange] = useEdgesState([]);
 	const [nodeInstance, setNodeInstance] = useState(null);
@@ -52,6 +55,7 @@ const Canvas = ({ flowDetails }) => {
 				type: "default",
 				position,
 				data: { label: data.name },
+				isValid: false,
 			};
 			setNodes((nodes) => [...nodes, newNode]);
 		},

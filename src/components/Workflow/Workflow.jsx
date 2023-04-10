@@ -17,7 +17,7 @@ const Workflow = () => {
 	useEffect(() => {
 		fetchFlowNodes();
 	}, [id]);
-	console.log(flowDetails);
+
 	return (
 		<div className='workflow-div'>
 			<div className='worklflow'>
