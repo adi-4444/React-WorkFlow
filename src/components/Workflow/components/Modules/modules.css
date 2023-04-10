@@ -25,9 +25,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 1.5rem;
+	margin-bottom: 3rem;
 	border: 1px solid rgb(166, 166, 240);
 	border-radius: 10px;
+	cursor: pointer;
 }
 .input,
 .output {
@@ -58,4 +59,11 @@
 .pagination {
 	position: absolute;
 	bottom: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+.pagination button {
+	padding: 3px 6px;
 }

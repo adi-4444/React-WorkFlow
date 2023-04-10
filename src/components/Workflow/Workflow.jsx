@@ -17,7 +17,7 @@ const Workflow = () => {
 	useEffect(() => {
 		fetchFlowNodes();
 	}, [id]);
-
+	console.log(flowDetails);
 	return (
 		<div className='workflow-div'>
 			<div className='worklflow'>
@@ -26,7 +26,7 @@ const Workflow = () => {
 				</h2>
 				<div className='flow-content'>
 					<Modules />
-					<Canvas />
+					<Canvas flowDetails={flowDetails} />
 				</div>
 			</div>
 		</div>

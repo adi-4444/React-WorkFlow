@@ -1,0 +1,36 @@
+/* .node {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3rem;
+	border: 1px solid rgb(166, 166, 240);
+	border-radius: 10px;
+	width: 250px;
+	cursor: pointer;
+}
+.node-input,
+.node-output {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 40px;
+	border: 1px solid rgb(166, 166, 240);
+}
+.node-input {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.node-output {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.node-name {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	width: 350px;
+	border: 1px solid rgb(166, 166, 240);
+	background-color: rgb(208, 224, 241);
+} */
